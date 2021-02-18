@@ -2,19 +2,21 @@ import React, {useEffect, useState} from "react";
 import "./App.css";
 import axios from 'axios'
 import Container from './Container'
+import { API_KEY, BASE_URL } from "./constants/constants";
 
 function App() {
 
-    const [photo, setPhoto] = useState(null)
-    const [date, setDate] = useState(null)
+    const [photo, setPhoto] = useState([])
+    // const [date, setDate] = useState(null)
 
-    
+
     useEffect(() => {
       const fetchData = () => {
         axios
-          .get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`)
+          .get(`${BASE_URL}?api_key=${API_KEY}`)
           .then(res => {
-            console.log(res)
+           console.log(res.data)
+            setPhoto(res.data)
           })
           .catch(err => {
             console.log(err)
@@ -24,7 +26,9 @@ function App() {
     }, [])
   
   return (
-    <Container/>
+    <div className="background">
+    <Container photo={photo}/>
+    </div>
   );
 }
 
