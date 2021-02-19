@@ -1,38 +1,61 @@
-.App {
+@import-normalize;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+*{
+  font-family: 'Open Sans', sans-serif;
+  color:white;
+}
+
+html{
+  background-image: url('https://www.nasa.gov/sites/default/files/styles/image_card_4x3_ratio/public/thumbnails/image/potw2106a_1_0.jpg');
+}
+
+/* .headingDiv{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.discoverLink{
+  font-weight: 800;
+  margin-right: 10px;
+  text-decoration: none;
+  color:rgb(35, 218, 218);
+} */
+
+/* .imageDiv{
+  width: 85%;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image{
+  width: 100%;
+  border-radius: 10%;
+} */
+
+/* .underImg{
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title{
+  font-size: 1.1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.copyright{
+  font-size: 1.1rem;
+} */
+
+/* .copyrightSpan{
+  color:aqua;
+} */
+
+/* .explanation{
+  line-height: 2;
+  font-size: 1.2rem;
+  margin: 50px auto;
+  max-width: 100%;
+  width: 80%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.explanSpan{
+  color:rgba(226, 21, 216, 0.986);
+  font-weight: 900;
+} */
