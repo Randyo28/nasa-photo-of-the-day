@@ -3,6 +3,9 @@ import "./App.css";
 import axios from 'axios'
 import Container from './Container'
 import { API_KEY, BASE_URL } from "./constants/constants";
+import { ThemeProvider } from 'styled-components';
+import theme from './theme/theme';
+
 
 function App() {
 
@@ -26,9 +29,11 @@ function App() {
     }, [])
   
   return (
-    <div className="background">
-    <Container photo={photo}/>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="background">
+        <Container photo={photo}/>
+      </div>
+    </ThemeProvider>
   );
 }
 
